@@ -103,7 +103,7 @@ iframe {
         display: inline-block;
     }
     nav li a {
-        display: inline;
+        display: block;
         width: 150px;
         height: 40px;
     }
@@ -117,6 +117,15 @@ iframe {
 /* Desktop Styles */
 
 @media (min-width: 1024px) {
+
+    header {
+        height: 300px;
+    }
+
+    header h1 {
+        line-height: 300 px;
+    }
+
     #container {
     width: 65%;
     margin: 20px auto;
