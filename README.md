@@ -5,7 +5,6 @@
      <li><a href="adv_css/index.html" target="_blank"> Advanced CSS</a></li>
      <li><a href="responsive" target="_blank"> Responsive
     </a></li>
-<li><a href="resources_css/index.html" target="_blank"> Advanced CSS</a></li>
-
+<li><a href="Final/index.html" target="_blank">Final CSS</a></li
      
 </ul>
