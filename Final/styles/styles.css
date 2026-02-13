@@ -1,0 +1,219 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+/* Global */
+* { box-sizing: border-box; }
+
+body {
+    background-color: #DCF0F2;
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+a { color: #8C8146; }
+a:hover { text-decoration: none; }
+
+/* Container */
+#container {
+    border: 4px solid #70898C;
+    background-color: #C2D9A0;
+}
+
+/* Header */
+header {
+    background-image: url("../images/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    
+}
+
+/* Nav */
+nav { text-align: center; }
+nav ul {
+    padding: 0;
+
+    margin: 0;
+}
+nav li { display: block; }
+
+nav li a {
+    display: block;
+    background-color: #CAD9A9;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+nav li a:hover {
+    background-color: #59564F;
+    color: #fff;
+}
+
+/* main */
+
+main { padding: 10px; margin: 10px; }
+
+.center { 
+    text-align: center; }
+
+
+
+.main_content { padding: 10px; }
+
+.col { margin: 10px 0; }
+
+.col_img {
+    border-radius: 10px;
+    border: 3px solid #59564F;
+}
+
+/* Gallery */
+.gallery { margin-bottom: 10px; }
+
+/* Footer */
+footer {
+    padding: 30px;
+    text-align: center;
+    border-top: 4px solid #70898C;
+    background-color: #CAD9A9;
+}
+
+/* Media */
+iframe {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+audio, video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 16px auto;
+}
+
+.small_note { font-size: 0.9rem; }
+
+/* Layout helpers */
+.two_col { display: block; }
+.two_col .left, .two_col .right { margin: 10px 0; }
+
+.three_col { display: block; }
+
+/* Tablet */
+@media (min-width: 768px) {
+    nav { padding: 10px 0; border-bottom: 4px solid #C2D9A0; }
+    nav li { display: inline-block; }
+    nav li a { width: 160px; font-size: 18px; }
+
+    .two_col {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .two_col .left, .two_col .right {
+        flex: 1;
+        margin: 0;
+    }
+
+    .three_col {
+        display: flex;
+        gap: 16px;
+    }
+    .three_col .col {
+        flex: 1;
+        margin: 0;
+    }
+
+    .col_img { width: 85%; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    header { height: 300px; }
+    header h1 { line-height: 300px; font-size: 48px; }
+
+    #container {
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    .gallery {
+        display: flex;
+        gap: 16px;
+    }
+
+    .col {
+        border: 2px solid #59564F;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.45);
+    }
+
+    .col img { width: 100%; }
+}
+
+
+/* HISTORY: classic info */
+.page-history main {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 14px;
+    padding: 12px;
+}
+
+/* BREEDS: darker “gallery” feel */
+.page-breeds header { background-image: url("../images/cat3.jpg"); }
+.page-breeds nav li a { background-color: #59564F; color: #fff; }
+.page-breeds nav li a:hover { background-color: #8C8146; }
+.page-breeds .page_intro {
+    background-color: rgba(255,255,255,0.6);
+    border: 2px dashed #59564F;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+/* BEHAVIOR: blog/article vibe */
+.page-behavior header { background-image: url("../images/cat5.jpg"); }
+.page-behavior main {
+    background-color: rgba(220, 240, 242, 0.55);
+    border-radius: 14px;
+    padding: 12px;
+}
+.page-behavior .feature { border-left: 8px solid #8C8146; }
+
+/* HEALTH: clinic/checklist vibe */
+.page-health header { background-image: url("../images/Cat7.jpg"); }
+.page-health nav li a { background-color: #CAD9A9; border-bottom: 2px solid #70898C; }
+.page-health .callout {
+    padding: 10px;
+    border: 2px solid #70898C;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 10px;
+}
+
+/* RESOURCES: link hub vibe */
+.page-resources header { background-image: url("../images/cat4.jpg"); }
+.page-resources main {
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 14px;
+    padding: 12px;
+}
