@@ -8,21 +8,21 @@ body {
 img{
     display: block;
     margin: 0 auto;
-    width: 100%;
+    
 }
 
 a{
     color: #8C8146;
 }
 
-a :hover {
+a:hover {
     text-decoration: none;
 }
 
 /* Mobile Styles */
 
 header {
-    background-image: url("../images/banner2.jpg");
+    background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
@@ -74,6 +74,7 @@ main {
 }
 
 .col_img {
+    width: 60%;
     border-radius: 10px;
     border: 3px solid #59564F;
 }
@@ -118,40 +119,38 @@ iframe {
 
 @media (min-width: 1024px) {
 
-    header {
-        height: 300px;
-    }
+ header {
+    height: 300px;
+  }
 
-    header h1 {
-        line-height: 300px;
-    }
+  header h1 {
+    line-height: 300px;
+  }
 
-    #container {
-    width: 65%;
+  #container {
+    width:100%;
     margin: 20px auto;
-    background-color:#C2D9A0 ;
-    }
+    background-color: #C2D9A0;
+  }
 
-    .gallery {
-        display: flex;
-    }
-
-    .col {
-        border: 2px solid #59564F;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    .col img {
-        width: 100%;
-    }
+  .gallery {
+  width: 100%;
 }
 
-.col h3 {
+.col {
+  width: 100%;
+  text-align: center;
+}
+
+.col_img {
+  display: inline-block; /* key difference */
+  width: 60%;
+}
+  .col h3 {
     padding: 10px;
-}
+  }
 
-.muli_col {
+  .muli_col {
     display: flex;
+  }
 }
