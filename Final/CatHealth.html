@@ -1,80 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page-health">
 <head>
-  <meta charset="UTF-8">
-  <title>Cat Health</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/x-icon" href="images/apple-touch-icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health</title>
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" type="image/x-icon" href="images/apple-touch-icon.png" />
 </head>
-
 <body>
-  <div id="container">
-    <header>
-      <h1>Cat Health</h1>
-    </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">History</a></li>
-        <li><a href="breeds.html">Breeds</a></li>
-        <li><a href="behavior.html">Behavior</a></li>
-        <li><a href="CatHealth.html">Cat Health</a></li>
-        <li><a href="resources.html">Resources</a></li>
-      </ul>
-    </nav>
+  <div class="topbar">
+    <div class="wrapper brand">
+      <div>
+        <h1>Cat Health</h1>
+       
+      </div>
+     
+    </div>
 
-    <main>
-      <section class="gallery">
-        <h2>Cat Health Gallery</h2>
-
-        <div class="col">
-          <img class="col_img" src="images/Cat7.jpg" alt="Cat care">
-        </div>
-
-        <div class="col">
-          <img class="col_img" src="images/Cat8.jpg" alt="Vet visit">
-        </div>
-
-        <div class="col">
-          <img class="col_img" src="images/Cat9.jpg" alt="Healthy cat">
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="main_content">
-        <h2 id="general-health">
-          <a href="https://www.webmd.com/pets/cats/default.htm" target="_blank" rel="noopener">
-            General Health
-          </a>
-        </h2>
-
-        <p>
-          Maintaining your cat’s health is an important part of responsible pet care, and it starts with understanding their needs and working with a trusted veterinarian.
-          Regular wellness exams help monitor your cat’s overall condition, catch potential health issues early, and ensure they receive appropriate preventive care.
-          Staying current on vaccines, parasite prevention, and dental care can make a big difference in your cat’s long-term comfort and quality of life.
-        </p>
-
-        <h3>Everyday Care Tips</h3>
+    <div class="wrapper">
+      <nav>
         <ul>
-          <li>Provide fresh water daily and a balanced diet appropriate for your cat’s age.</li>
-          <li>Keep the litter box clean and watch for changes in bathroom habits.</li>
-          <li>Brush your cat regularly and check for fleas, ticks, or skin irritation.</li>
-          <li>Schedule routine vet checkups (even if your cat seems fine).</li>
+          <li><a href="index.html">History</a></li>
+          <li><a href="breeds.html">Breeds</a></li>
+          <li><a href="behavior.html">Behavior</a></li>
+          <li><a class="active" href="CatHealth.html">Cat Health</a></li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
-
-        <h3>Signs You Should Call a Vet</h3>
-        <p>
-          If your cat stops eating, hides more than usual, seems lethargic, vomits repeatedly, or has trouble breathing, it’s best to contact a veterinarian.
-          Cats are good at hiding pain, so sudden behavior changes can be a clue that something is wrong.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 Cat Health</p>
-    </footer>
+      </nav>
+    </div>
   </div>
+
+  <main class="wrapper grid">
+    <section class="card">
+      <h2>Healthy Habits</h2>
+      <ul>
+        <li>Fresh water available at all times.</li>
+        <li>Balanced diet and portion control.</li>
+        <li>Regular play/exercise.</li>
+        <li>Yearly vet checkups (or as recommended).</li>
+      </ul>
+
+      <h2>Warning Signs</h2>
+      <p class="small">
+      <strong>Vomiting</strong>
+      Your cat throwing up every once in a while is not a concern.1 However, keep track of the timing and frequency to see if there's a pattern. 
+      Anything more than occasional, random vomiting warrants a trip to the veterinarian. </p>
+
+      <p>
+      <strong>Loss of Appetite</strong> 
+      This can be normal for cats, but it still should not be ignored. If your cat skips the occasional meal but otherwise eats normally, watch closely for trends. 
+      If your cat stops eating entirely or is only eating tiny amounts, you need to get your veterinarian involved. 
+      Lack of eating for even a couple of days can lead to a serious problem called fatty liver or hepatic lipidosis.</p>
+
+      <p>
+      <strong>Increased Appetite</strong>
+     
+      A cat eating too much may also be a concern, especially if it comes on suddenly in an older cat. Hyperthyroidism may be the explanation, but your vet will need to run tests to be sure.2
+      Hyperthyroidism in Cats. Cornell Feline Health Center.
+       Increased appetite should not be ignored, even in younger cats. If nothing else, it can lead to overeating and obesity.
+      </p>
+    </section>
+
+    <aside class="card">
+      <h2>Online 24 Hour Vet</h2>
+    
+      <a href="https://www.chewy.com/b/connect-vet-16616?msockid=1cc3f7a805916beb0a3ae3ad04216aaf">
+    Connect with a Vet on Chewy
+      </a>
+
+
+
+      <p class="small" style="margin-top:12px;">
+      </p>
+    </aside>
+  </main>
+
+  <footer class="wrapper">
+    <small>© 2026 • CATS</small>
+  </footer>
+
 </body>
 </html>

@@ -1,95 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page-behavior">
 <head>
-  <meta charset="UTF-8">
-  <title>Behavior</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/x-icon" href="images/apple-touch-icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Behavior</title>
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" type="image/x-icon" href="images/apple-touch-icon.png" />
 </head>
-
 <body>
-  <div id="container">
-    <header>
-      <h1>Behavior</h1>
 
-      <audio controls>
-        <source src="media/cat-sounds.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </header>
+  <div class="topbar">
+    <div class="wrapper brand">
+      <div>
+        <h1>Cat Behavior</h1>
+   
+      </div>
+     
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">History</a></li>
-        <li><a href="breeds.html">Breeds</a></li>
-        <li><a href="behavior.html">Behavior</a></li>
-          <li><a href="CatHealth.html">Cat Health</a></li
-        <li><a href="resources.html">Resources</a></li>
-      </ul>
-    </nav>
-
-    <hr>
-
-    <main>
-      <section class="gallery">
-        <div class="col">
-          <img class="col_img" src="images/cat5.jpg" alt="Cat5">
-        </div>
-
-        <div class="col">
-          <img class="col_img" src="images/cat6.jpg" alt="Cat6">
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="main_content">
-        <h2 id="behavior">
-          <a href="https://www.rd.com/list/how-to-decode-your-cats-behavior/" target="_blank" rel="noopener">
-            Behavior
-          </a>
-        </h2>
-
-        <p>
-          Cats display a wide range of behaviors that help them communicate and adapt to their environment.
-          One of the most common behaviors is meowing, which cats use mainly to interact with humans rather than other cats.
-          Body language is also important—tail position, ear movement, and posture can show whether a cat feels relaxed, curious, or threatened.
-          Scratching is another natural behavior that helps cats keep their claws healthy while also marking territory through scent glands in their paws.
-          Cats often groom themselves to stay clean and reduce stress, and this behavior can also be a sign of comfort.
-          Together, these behaviors help cats express their needs and maintain their physical and emotional well-being.
-        </p>
-      </section>
-
-      <hr>
-
-      <section class="main_content">
-        <h3 id="space-please">
-          <a href="https://www.wikihow.pet/Give-Your-Cat-Enough-Personal-Space" target="_blank" rel="noopener">
-            Space-please
-          </a>
-        </h3>
-
-        <p>
-          In addition to communication and grooming behaviors, cats are known for their strong instincts and daily routines.
-          Many cats are most active during dawn and dusk, a behavior known as being crepuscular, which comes from their history as hunters.
-          Play behavior, such as chasing or pouncing, helps cats practice hunting skills and burn off energy, even in a home environment.
-          Cats also value their independence and personal space, often choosing when and how they interact with people.
-          At the same time, many cats form close bonds with their owners and may show affection by purring, rubbing against them, or following them from room to room.
-          These behaviors reflect a balance between a cat’s wild instincts and its role as a companion animal.
-        </p>
-
-        <h4>Space Continued</h4>
+    <div class="wrapper">
+      <nav>
         <ul>
-          <li>Provide quiet hiding or resting spots</li>
-          <li>Let your cat approach you first</li>
-          <li>Avoid forced petting or handling</li>
-          <li>Watch for body language signals</li>
+          <li><a href="index.html">History</a></li>
+          <li><a href="breeds.html">Breeds</a></li>
+          <li><a class="active" href="behavior.html">Behavior</a></li>
+          <li><a href="CatHealth.html">Cat Health</a></li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
-      </section>
-    </main>
-
-    <footer>&copy; 2026 History of the Feline</footer>
+      </nav>
+    </div>
   </div>
+
+  <main class="wrapper grid">
+    <section class="card">
+      <h2>Common Behaviors</h2>
+      <ul>
+        <li><strong>Purring</strong> — can mean comfort, but sometimes stress too.</li>
+        <li><strong>Kneading</strong> — a comfort behavior from kittenhood.</li>
+        <li><strong>Slow blinking</strong> — often a sign of trust.</li>
+        <li><strong>Scratching</strong> — helps mark territory and maintain claws.</li>
+      </ul>
+
+      
+      <div class="gallery">
+        <img src="images/cat7.jpg" alt="Cat" />
+        <img src="images/cat8.jpg" alt="Cat" />
+        <img src="images/cat9.jpg" alt="Cat" />
+      </div>
+    </section>
+
+    <aside class="card">
+      <h2>Other Behaviors</h2>
+      <p>Common cat behaviors often reflect their natural instincts as hunters and independent animals. 
+        Cats frequently groom themselves to stay clean and regulate their scent, and they may knead soft surfaces as a comforting habit learned from kittenhood. 
+        Scratching is another normal behavior that helps them stretch, mark territory, and keep their claws healthy. 
+        Many cats also show affection by purring, rubbing against people, or following their owners around, while others prefer quiet observation from a distance. 
+        Playful actions like chasing toys, pouncing, or sudden bursts of energy, often called “zoomies,” are ways cats release energy and practice hunting skills. 
+        Understanding these behaviors helps owners better meet their cat’s physical and emotional needs.</p>
+
+      <p class="small" style="margin-top:12px;">
+       
+      </p>
+    </aside>
+  </main>
+
+  <footer class="wrapper">
+    <small>© 2026 • CATS</small>
+  </footer>
+
 </body>
 </html>
