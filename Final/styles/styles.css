@@ -15,10 +15,9 @@
 
 body{
   margin: 0;
-  font-family: "Montserrat", Arial, sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+  background-color: #4a90e2;
+  color: black;
+  line-height: 1.6 px;
 }
 
 /* Main container */
@@ -30,7 +29,7 @@ body{
 
 /* Header */
 header{
-  background-color: var(--accent);
+  background-color: lightblue;
   color: white;
   padding: 20px;
   text-align: center;
@@ -86,7 +85,7 @@ main{
 /* Responsive */
 @media (max-width: 768px){
   .gallery img{
-    width: 80%;
+    width: 60%;
   }
 
   nav li{
@@ -95,7 +94,7 @@ main{
   }
 }
 
-/* Audio player */
+
 .audio{
   text-align: center;
   margin-top: 15px;
@@ -106,11 +105,58 @@ audio{
   max-width: 400px;
 }
 
-/* Footer */
+
 footer{
   text-align: center;
   padding: 15px;
   border-top: 1px solid var(--border);
   color: #666;
   font-size: 0.9rem;
+}
+
+.topbar{
+  background-image: url("../images/cat10.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.topbar::before{
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+}
+
+.topbar .wrapper{
+  position: relative;
+ 
+}
+
+.topbar h1{
+  margin: 0;
+  text-shadow: 2px 2px 6px purple;
+}
+
+@media (max-width: 768px){
+  .topbar{
+    min-height: 160px;
+    text-align: center;
+  }
+
+  .topbar h1{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .gallery img{
+    width: 45%;
+  }
 }
