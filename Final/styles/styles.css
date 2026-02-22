@@ -17,7 +17,7 @@ body{
   margin: 0;
   background-color: #4a90e2;
   color: black;
-  line-height: 1.6 px;
+  line-height:normal;
 }
 
 /* Main container */
